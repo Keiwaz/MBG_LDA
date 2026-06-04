@@ -1,0 +1,129 @@
+
+======================================================================
+TOPIC MODELLING PROJECT - SUMMARY REPORT
+======================================================================
+
+DATASET INFORMATION
+----------------------------------------------------------------------
+Dataset: BBC News Indonesia - "Setahun Program MBG - Siapa yang diuntungkan?"
+Total Comments: 6,805
+Source Column: Comment
+Processing Date: 2026-06-04 03:43:37
+
+PREPROCESSING SUMMARY
+----------------------------------------------------------------------
+Original Documents: 6811
+After Cleaning: 6807
+After Stopword Removal: 6805
+Final Documents: 6805
+
+TF-IDF VECTORIZATION
+----------------------------------------------------------------------
+Max Features: 5,000
+Min Document Frequency: 2
+Max Document Frequency: 0.8 (80%)
+N-gram Range: (1, 2) - Unigram and Bigram
+Total Features Extracted: 5,000
+Matrix Sparsity: 99.67%
+
+LDA MODEL CONFIGURATION
+----------------------------------------------------------------------
+Library: Gensim (LdaMulticore)
+Optimal Number of Topics: 4
+Coherence Score (C_v): 0.5247
+Perplexity: -6.9889
+Number of Passes: 10
+Number of Workers: 4
+
+TOPIC ANALYSIS
+----------------------------------------------------------------------
+
+Topic 1:
+  Top 10 Words:
+     1. untung               (weight: 0.0150)
+     2. makan                (weight: 0.0130)
+     3. banyak               (weight: 0.0110)
+     4. rakyat               (weight: 0.0100)
+     5. kerja                (weight: 0.0100)
+     6. negara               (weight: 0.0090)
+     7. uang                 (weight: 0.0090)
+     8. buat                 (weight: 0.0090)
+     9. program              (weight: 0.0090)
+    10. anggar               (weight: 0.0080)
+
+Topic 2:
+  Top 10 Words:
+     1. program              (weight: 0.0250)
+     2. makan                (weight: 0.0200)
+     3. gratis               (weight: 0.0160)
+     4. prabowo              (weight: 0.0120)
+     5. indonesia            (weight: 0.0100)
+     6. presiden             (weight: 0.0100)
+     7. gizi                 (weight: 0.0100)
+     8. banyak               (weight: 0.0100)
+     9. masalah              (weight: 0.0090)
+    10. buat                 (weight: 0.0090)
+
+Topic 3:
+  Top 10 Words:
+     1. makan                (weight: 0.0610)
+     2. anak                 (weight: 0.0340)
+     3. sekolah              (weight: 0.0210)
+     4. gratis               (weight: 0.0200)
+     5. gizi                 (weight: 0.0170)
+     6. orang                (weight: 0.0140)
+     7. program              (weight: 0.0130)
+     8. racun                (weight: 0.0120)
+     9. tua                  (weight: 0.0110)
+    10. lebih                (weight: 0.0100)
+
+Topic 4:
+  Top 10 Words:
+     1. program              (weight: 0.0350)
+     2. sekolah              (weight: 0.0260)
+     3. baik                 (weight: 0.0210)
+     4. lebih                (weight: 0.0170)
+     5. banyak               (weight: 0.0120)
+     6. perintah             (weight: 0.0100)
+     7. anak                 (weight: 0.0090)
+     8. korupsi              (weight: 0.0080)
+     9. bukan                (weight: 0.0070)
+    10. dana                 (weight: 0.0070)
+
+----------------------------------------------------------------------
+DOCUMENT CLASSIFICATION
+----------------------------------------------------------------------
+Average Dominant Topic Confidence: 0.7813
+Min Confidence: 0.2500
+Max Confidence: 0.9968
+Standard Deviation: 0.1631
+
+Topic Distribution:
+  Topic 1: 1458 documents (21.43%)
+  Topic 2: 1381 documents (20.29%)
+  Topic 3: 2387 documents (35.08%)
+  Topic 4: 1579 documents (23.20%)
+
+----------------------------------------------------------------------
+OUTPUT FILES
+----------------------------------------------------------------------
+Data Files:
+  - output/data/preprocessed_comments.csv
+
+Models:
+  - output/models/lda_model_final.model
+
+Visualizations:
+  - 01_comment_statistics.png - Comment length and word count distributions
+  - 02_top_idf_features.png - Top 20 features by IDF score
+  - 03_coherence_perplexity.png - Model evaluation metrics
+  - 04_topics_words.png - Top words per topic
+  - 05_topic_distribution.png - Topic prevalence and dominant counts
+  - 06_wordclouds_topics.png - Word clouds for each topic
+  - 07_interactive_ldavis.html - Interactive visualization (open in browser)
+  - 08_document_topic_heatmap.png - Document-topic distribution heatmap
+  - 09_confidence_distribution.png - Document confidence scores
+
+======================================================================
+END OF REPORT
+======================================================================
