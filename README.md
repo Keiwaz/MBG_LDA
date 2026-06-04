@@ -1,9 +1,9 @@
 # 📊 Topic Modeling LDA — Program Makan Bergizi Gratis (MBG)
 
-Proyek ini mengimplementasikan **Latent Dirichlet Allocation (LDA)** untuk menemukan topik-topik laten dari komentar publik terhadap program **Makan Bergizi Gratis (MBG)** di BBC News Indonesia. Pipeline mencakup preprocessing teks (normalisasi, tokenisasi, stopword removal), pemodelan topik, pelabelan, dan visualisasi hasil.
+Proyek ini mengimplementasikan **Latent Dirichlet Allocation (LDA)** untuk menemukan topik-topik laten dari komentar publik terhadap program **Makan Bergizi Gratis (MBG)** dari komentar pada youtube. Pipeline mencakup preprocessing teks (normalisasi, tokenisasi, stopword removal), pemodelan topik, pelabelan, dan visualisasi hasil.
 
-> **Dataset:** BBC News Indonesia — *"Setahun Program MBG - Siapa yang diuntungkan?"*  
-> **Total Komentar:** 6.805 dokumen  
+> **Dataset:** Komentar youtube*  
+> **Total Komentar:** 6.811 dokumen  
 > **Topik Optimal:** 4 topik | **Coherence Score (C_v):** 0.5247
 
 ---
