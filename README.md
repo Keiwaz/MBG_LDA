@@ -166,5 +166,5 @@ output/reports/topic_modelling_summary.txt
 
 ## 👤 Author
 
-**Kevin** — Mahasiswa S1 Manajemen, Universitas Terbuka  
+**Kevin** — Mahasiswa S1 Data Sains, Telkom University Surabaya  
 🔗 [github.com/Keiwaz](https://github.com/Keiwaz)
